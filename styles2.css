@@ -1,0 +1,159 @@
+html { 
+    height: 100%; 
+    font-family: "Space Mono",
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #eee;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;   
+    flex-direction: column;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h2, h3, a {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.45em;
+}
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.logo a, .main-nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+
+.main-nav a {
+    color: #ffffff;
+    font-size: .99em;
+}
+
+.main-nav a:hover {
+    color: #bdbdbd;
+}
+
+.container {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 50px;    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-img {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 50px;    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./data/img22.jpg');
+    background-size: cover;
+}
+
+.container * {
+    margin: 0;
+}
+
+.container p {
+    margin-top: 0.75rem;
+    text-align: left;
+}
+
+.container p a {
+    color: inherit;
+}
+
+.container p:first-child {
+    margin-top: 0;
+}
+
+.black {
+    background: linear-gradient(45deg, rgb(6, 6, 6), #434343);
+}
+
+@media (min-width: 1000px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-nav {
+        margin-top: 0;
+        display: flex;
+        flex-direction: row; /* Add this line */
+    }
+
+    .main-nav a {
+        padding: 10px 15px;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+    }
+
+    .text-home {
+        padding: 10px 15px;
+        text-align: center;
+        display: block;
+    }
+
+    .container {
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 50px;    
+        text-align: left; /* Alinea el texto a la izquierda */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Alinea los elementos hijos a la izquierda */
+        justify-content: center;
+    }
+    
+    .container-img {
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 50px;    
+        text-align: left; /* Alinea el texto a la izquierda */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Alinea los elementos hijos a la izquierda */
+        justify-content: center;
+        background-image: url('./data/img22.jpg');
+        background-size: cover;
+    }
+    
+}
