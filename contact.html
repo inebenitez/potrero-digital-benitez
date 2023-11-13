@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="icon" href=""> <!--poner favicon -->
-    <link rel=StyleSheet href="./styles.css">
+    <link rel=StyleSheet href="./stylesContact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 
 <body>
@@ -22,35 +24,51 @@
 
     <main class="main">
         <div class="content">
-            <h3>Subtítulo de la Página</h3>
-            <h2>Título de la Página</h2>
-            <form action="destination.php" class="fluid-form">
-                <div class="form-section">
-                    <ul class="contact-info">
-                        <li><strong>Phone:</strong><br>+123 456 789</li>
-                        <li><strong>Media:</strong><br>@yourusername</li>
-                        <li><strong>Address:</strong><br>Your Street, City</li>
-                        <li><strong>Mail:</strong><br>your.email@example.com</li>
+            <h3 class="subtitle-card">Form more information</h3>
+            <h2 class="title-card">Contact Us</h2>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>Río Gallegos, Santa Cruz.</li>
+                        <li><i class="fas fa-phone"></i>+54 11 3677 5879</li>
+                        <li><i class="fas fa-envelope-open-text"></i>ines.benitez@hotmail.com.ar</li>
                     </ul>
+                    <p>Combino mis habilidades blandas con mis habilidades técnicas para ofrecer soluciones
+                        personalizadas y satisfacer las necesidades de los clientes. Si necesitas un profesional
+                        independiente comprometido con el éxito de tu proyecto. ¡Contactame!</p>
                 </div>
-                <div class="form-section">
-                    <p>
-                        <label for="name">Name / Company: </label>
-                        <input type="text" id="name" class="fluid-input" autofocus>
-                    </p>
-                    <p>
-                        <label for="email">E-mail : </label>
-                        <input type="email" id="email" class="fluid-input">
-                    </p>
-                    <p class="fluid-textarea">
-                        <textarea name="" id="" cols="10"
-                            rows="3">Message</textarea>
-                    </p>
-                    <p>
-                        <input type="submit" value="Send">
-                    </p>
+                <div class="contact-form">
+                    <h3 class="title-form">Form Contact</h3>
+                    <form action="">
+                        <p>
+                            <label for="fullname">Name / Company</label>
+                            <input type="text" name="" id="fullname" autocomplete="off" id="nombre">
+                            <span class="error" id="error"></span>
+                        </p>
+                        <p>
+                            <label for="email">Email</label>
+                            <input type="email" name="" id="email" autocomplete="off">
+                        </p>
+                        <p>
+                            <label for="">Phone</label>
+                            <input type="tel" name="" id="" autocomplete="off">
+                        </p>
+                        <p>
+                            <label for="">Subject</label>
+                            <input type="text" name="" id="" autocomplete="off">
+                        </p>
+                        <p class="block">
+                            <label for="">Message</label>
+                            <textarea name="" id="" cols="30" rows="6" autocomplete="off"></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="submit">Send</button>
+                        </p>
+                    </form>
                 </div>
-            </form>
+            </div>
     </main>
 
     <footer>
