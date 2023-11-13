@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="icon" href="">  <!--poner favicon -->
+    <link rel="icon" href=""> <!--poner favicon -->
     <link rel=StyleSheet href="./styles.css">
 </head>
 
@@ -19,8 +20,42 @@
         </ul>
     </header>
 
+    <main class="main">
+        <div class="content">
+            <h3>Subtítulo de la Página</h3>
+            <h2>Título de la Página</h2>
+            <form action="destination.php" class="fluid-form">
+                <div class="form-section">
+                    <ul class="contact-info">
+                        <li><strong>Phone:</strong><br>+123 456 789</li>
+                        <li><strong>Media:</strong><br>@yourusername</li>
+                        <li><strong>Address:</strong><br>Your Street, City</li>
+                        <li><strong>Mail:</strong><br>your.email@example.com</li>
+                    </ul>
+                </div>
+                <div class="form-section">
+                    <p>
+                        <label for="name">Name / Company: </label>
+                        <input type="text" id="name" class="fluid-input" autofocus>
+                    </p>
+                    <p>
+                        <label for="email">E-mail : </label>
+                        <input type="email" id="email" class="fluid-input">
+                    </p>
+                    <p class="fluid-textarea">
+                        <textarea name="" id="" cols="10"
+                            rows="3">Message</textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Send">
+                    </p>
+                </div>
+            </form>
+    </main>
+
     <footer>
         <p>© 2023 Potrero Digital - CGC </p>
     </footer>
 </body>
+
 </html>
